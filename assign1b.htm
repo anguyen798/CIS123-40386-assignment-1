@@ -5,33 +5,55 @@
     <title>The encyclopedia of dogs</title>
 </head>
 <body>
-    <h2 style="text-align:center;">Dog Breeds</h2>
-    <center>
+    <h1 style="text-align:center;">The Dogcyclopedia</h1>
+    <!-- image should be centered but haven't discovered better way of centering image with only html without using <center>-->
     <img src="images/dogs.jpg" onerror="this.onerror=null;this.src='https://images.pexels.com/photos/850602/pexels-photo-850602.jpeg';" alt="A picture of three different dog breeds" style="max-height: 212px">
-    </center> <!-- center image haven't discovered better way of centering image-->
     <!-- onerror event used as an example if image src doesn't work, backup before alt attribute is used for this assignment -->
     <hr>
+    <h2><u>Doggie Definitions</u></h2>
     <dl>
         <dt><b>Chihuahua</b></dt>
         <dd>A small barking demon. Also very cute. </dd>  
-        <img src="images/chihuahua.jpg" onerror="this.onerror=null;this.src='https://images.pexels.com/photos/434046/pexels-photo-434046.jpeg';" alt="A picture of a chihuahua" style="max-height: 50px";>
-    <br>
+
         <dt><b>Pomeranian</b></dt>
         <dd>A fluffy ball of hair that may be even cuter than a Chihuahua. Also pint size.</dd>
-        <img src="images/pomeranian.jpg" onerror="this.onerror=null;this.src='https://images.pexels.com/photos/7683647/pexels-photo-7683647.jpeg';" alt="A picture of a pomeranian" style="max-height: 50px";>
-    <br>
+
         <dt><b>Corgi</b></dt>
         <dd>A medium sized dog that is shaped like a hot dog</dd>
-        <img src="images/corgi.jpg" onerror="this.onerror=null;this.src='https://images.pexels.com/photos/8162662/pexels-photo-8162662.jpeg';" alt="A picture of a corgi" style="max-height: 75px";>
-    <br>
+
         <dt><b>Husky</b></dt>
-        <dd>A large furry dog that is used be Candians as their primary form of transportation</dd>
-        <img src="images/husky.jpg" onerror="this.onerror=null;this.src='https://images.pexels.com/photos/245035/pexels-photo-245035.jpeg';" alt="A picture of a husky" style="max-height: 100px";>
-    <br>
+        <dd>A large furry dog that is used be Canadians as their primary form of transportation</dd>
+
         <dt><b>Shiba Inu</b></dt>
         <dd>A medium sized doggo. Also known for the cryptocurrency dodgecoin meme.</dd>
-        <img src="images/shiba.jpg" onerror="this.onerror=null;this.src='https://images.pexels.com/photos/14202097/pexels-photo-14202097.jpeg';" alt="A picture of a shiba inu" style="max-height: 75px";>
     </dl>
-    <a href="tel:867-5309">Albert's phone#: 867-5309</a>
+    <h2><u>Dog Picture</u></h2>
+    <table> <!-- Need css for table border outline, can't use bgcolor attribute due to w3 so leaving default -->
+        <tr>
+            <th>Breed</th>
+            <th>Photo</th>
+        </tr>
+        <tr>
+            <td> Chihuahua </td>
+            <td><img src="images/chihuahua.jpg" onerror="this.onerror=null;this.src='https://images.pexels.com/photos/434046/pexels-photo-434046.jpeg';" alt="A picture of a chihuahua" style="max-height: 50px"></td>
+        </tr>
+        <tr>
+            <td> Pomeranian</td>
+            <td><img src="images/pomeranian.jpg" onerror="this.onerror=null;this.src='https://images.pexels.com/photos/7683647/pexels-photo-7683647.jpeg';" alt="A picture of a pomeranian" style="max-height: 50px"></td>
+        </tr>
+        <tr>
+            <td> Corgi</td>
+            <td><img src="images/corgi.jpg" onerror="this.onerror=null;this.src='https://images.pexels.com/photos/8162662/pexels-photo-8162662.jpeg';" alt="A picture of a corgi" style="max-height: 75px"></td>
+        </tr>
+        <tr>
+            <td> Husky</td>
+            <td><img src="images/husky.jpg" onerror="this.onerror=null;this.src='https://images.pexels.com/photos/245035/pexels-photo-245035.jpeg';" alt="A picture of a husky" style="max-height: 100px"></td>
+        </tr>
+        <tr>
+            <td> Shiba Inu</td>
+            <td><img src="images/shiba.jpg" onerror="this.onerror=null;this.src='https://images.pexels.com/photos/14202097/pexels-photo-14202097.jpeg';" alt="A picture of a shiba inu" style="max-height: 75px"></td>
+        </tr>
+    </table>
+    <p>Albert's phone#: <a href="tel:867-5309"> 867-5309</a></p>
 </body>
 </html>

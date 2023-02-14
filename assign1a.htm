@@ -5,34 +5,37 @@
     <title>Simple Orange Coast College Page</title>
 </head>
 <body>
-    <a id="beginning"><u>Beginning of page</u></a>
-    <article>
-        <p> Example Paragraph 1 Here</p>
-        <p> Example Paragraph 2 Here</p>
-        <p> Example Paragraph 3 Here</p>
+    <a id="beginning"></a>
+    <article id="selfParagraphs"> <!-- Word salad paragraphs -->
+        <h2>In the beginning...</h2>
+        <p> &nbsp;&nbsp;&nbsp; In the landscape of my mind, where the passions of my heart take root, there lies a love of the creative arts. Photography, poetry, and painting all call to me like the ghosts of my ancestors, begging me to give voice to the mysteries of the soul. I see the world through a lens, capturing its beauty and sorrow, freezing moments in time like fireflies in a Mason jar. And when I turn to poetry, I seek to plumb the depths of the human experience, to use words like fishing lines, hoping to reel in some truth from the murky waters of existence.</p>
+        <p> &nbsp;&nbsp;&nbsp; But alongside this artistic bent, there lies a hunger for knowledge, for understanding the systems and structures that govern our lives. An accounting degree, the study of numbers and logic, a fascination with computer science and programming - these too have a place in my heart. Nietzsche once wrote that "without music, life would be a mistake." And I find that to be true in so many ways. For me, programming is like a symphony, a complex composition of code and logic that, when executed perfectly, creates a beautiful dance of machines.</p>
+        <p> &nbsp;&nbsp;&nbsp; And yet, it is not enough for me to simply exist within these dichotomies. Like a potter shaping clay, I seek to mold these disparate elements into a single, cohesive whole. To find a way to bring the art and science of my life together, to create something greater than the sum of its parts. A fusion of the creative and the logical, a testament to the human spirit, a celebration of the strange and beautiful journey that is life.</p>
     </article>
     <hr>
-    <p> This is a link to a very cool school. Come join us at <a href="http://www.orangecoastcollege.edu">OCC</a>! </p>
-    <p> This is a picture of <em>OCC</em> in 1860.
-    <br>
-    Click the picture to go to the school webpage and see the difference:
-    <br>
-    <a href="http://www.orangecoastcollege.edu"><img src="images/not_occ.jpg" onerror="this.onerror=null;this.src='https://images.pexels.com/photos/207684/pexels-photo-207684.jpeg';" alt="A picture of old English building that is not part of Orange Coast College" style="max-height: 250px";></a>
+    <p id="occLinks">
+        This is a link to a very cool school. Come join us at <a href="https://www.orangecoastcollege.edu">OCC</a>!
+        This is a picture of <em>OCC</em> in 1860. Click the picture to go to the school webpage and see the difference:
+        <br>
+        <a href="https://www.orangecoastcollege.edu"><img src="images/not_occ.jpg" onerror="this.onerror=null;this.src='https://images.pexels.com/photos/207684/pexels-photo-207684.jpeg';" alt="A picture of old English building that is not part of Orange Coast College" style="max-height: 250px"></a>
+    </p>
     <!-- onerror event used as an example if image src doesn't work, backup before alt attribute is used for this assignment -->
-
-    <h2> <u>Example unordered list</u></h2>
-    <ul>
-      <li>list item 1</li>
-      <li>list item 2</li>
-      <li>list item 3</li>
+    <hr>
+    <h2> <u>Meals for students</u></h2>
+    <ul id="uListMeals">
+      <li>Canned Tuna: $0.99</li>
+      <li>Instant Noodles: $1.99</li>
+      <li>Pack of beer (24 cans): $19.99</li>
     </ul>
-
+    <hr>
     <h2> <u>College by coolness</u></h2>
-    <ol>
-      <li><a href="http://orangecoastcollege.edu/">Orange Coast College</a></li>
-      <li><a href="http://goldenwestcollege.edu/">Golden West College</a></li>
-      <li><a href="http://coastline.edu/">Coastline College</a></li>
+    <ol id="oListColleges">
+      <li><a href="https://www.orangecoastcollege.edu/">Orange Coast College</a></li>
+      <li><a href="https://www.goldenwestcollege.edu/">Golden West College</a></li>
+      <li><a href="https://www.coastline.edu/">Coastline College</a></li>
     </ol>
-    <p>Click <a href="#top">here</a> to go back to the beginning of the page </p>
+    <hr>
+    <p>Click <a href="#beginning">here</a> to go back to the beginning of the page </p>
+    <p>Albert's phone#: <a href="tel:867-5309"> 867-5309</a></p>
 </body>
 </html>
