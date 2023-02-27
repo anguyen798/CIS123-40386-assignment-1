@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 3A Highlighted Lists</title>
+    <style>
+        h1 {
+            color: blue;
+            text-align: center;
+        }
+        h1:after {
+            content: " - CIS 123";
+        }
+        p {
+            text-indent: 5px;
+            white-space: pre-line;
+        }
+        p:first-of-type::first-letter,
+        p:last-of-type::first-letter {
+            font-size: 24pt;
+            color: orange;
+        }
+        li {
+            white-space: pre-line;
+        }
+        li:nth-child(1) {
+            list-style-image: url('images/heart.png');
+        }
+        li:nth-child(2) {
+            list-style-image: url('images/club.png');
+        }
+        li:nth-child(3) {
+            list-style-image: url('images/diamond.png');
+        }
+        li:nth-child(4) {
+            list-style-image: url('images/spade.png');
+        }
+        li:nth-child(odd) {
+            background-color: yellow;
+            color: red;
+        }
+        img {
+            max-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Albert Nguyen</h1>
+    <p>Once upon a time there was a magical website. It could highlight red cards.
+    Such was the magic that it did not even require JavaScript.
+    </p>
+    <p>Drop cap typography and colored fonts, it had it all! Can you guess how the magical website did this?
+        All of it was possible using the simple magic of CSS.
+        <!--Blank Line for spacing-->
+    </p>
+    <ul>
+        <li>Queen of Hearts:
+            <img src="https://cdn.shopify.com/s/files/1/1290/8635/products/HERT-Q-Laurian-1700_2048x.jpg" alt="Playing card image of Queen of Hearts by Echo Chernik">
+        </li>
+        <li>King of Clubs
+            <img src="https://cdn.shopify.com/s/files/1/1290/8635/products/NOTW-C-13K-Kote_Storytelling-1700_2048x.jpg" alt="Playing card image of King of Clubs by Echo Chernik">
+        </li>
+        <li>Queen of Diamonds
+            <img src="https://cdn.shopify.com/s/files/1/1290/8635/products/DIAM-Q-Auri_Roof-1700_2048x.jpg" alt="Playing card image of Queen of Diamonds by Echo Chernik">
+        </li>
+        <li>King of Spades
+            <img src="https://cdn.shopify.com/s/files/1/1290/8635/products/SPAD-K-Lorren-1700_2048x.jpg" alt="Playing card image of King of Spades by Echo Chernik">
+        </li>
+    </ul>
+</body>
+</html>

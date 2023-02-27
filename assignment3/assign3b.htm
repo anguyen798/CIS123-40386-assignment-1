@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 3B Lists with pseudo-elements</title>
+    <style>
+       h1{
+           font-size: 24px;
+       }
+       h1:after {
+           content: ":";
+       }
+        p {
+            text-indent: 5px;
+            white-space: pre-wrap;
+            width:60%;
+        }
+        ol {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+       a {
+           font-weight: bold;
+       }
+        a:after {
+            content: ":";
+        }
+        li{
+            margin: 10px 0;
+        }
+        li a {
+            color: green;
+            text-decoration: none;
+        }
+        li a:hover {
+            color: navy;
+        }
+        li a:visited {
+            color: red;
+        }
+        li a:active {
+            color: black;
+            text-transform: uppercase;
+        }
+        img{
+            text-align: justify;
+            max-height: 150px;
+        }
+       .card-price{
+           color: gray;
+           font-weight: bold;
+       }
+    </style>
+</head>
+<body>
+<h1>Ranking of five card decks ranked by kickstarter funding including website link</h1>
+<ol>
+    <li>
+        <a href="https://worldbuildersmarket.com/products/name-of-the-wind-art-deck">The Name of Wind Art Deck</a>
+        <p><span class="card-price">With $630,300 fundraised. Price: $15.00.</span> Based on Patrick Rothfuss' acclaimed novel, the deck of cards also received his endorsement. Made by Echo Chernik, the deck showcased characters from The Name of the Wind, the initial book of the Kingkiller Chronicles series and is illustrated with a vibrant and colorful style.</p>
+        <img src="https://149455152.v2.pressablecdn.com/wp-content/uploads/2017/08/NotWCards.jpg" alt="The Name of Wind Art Deck by Echo Chernik">
+    </li>
+    <li>
+        <a href="https://travel9to5.com/shop/photography-playing-cards/">The Photography Deck</a>
+        <p><span class="card-price">With $364,000 fundraised. Price: $24.90.</span> The Photograph deck combines the world of photography and playing cards. Made by Chris Ovdiyenko, each numbered card features essential photography techniques and rules, while the court cards boast individual camera designs, serving as both photography tip cards and playing cards. The deck is divided into four different categories, with each suit representing a specific aspect of photography. Spades showcase Camera Basics, Hearts represent Composition, Clubs embody Technical aspects, and Diamonds showcase Shooting Styles.</p>
+        <img src="https://travel9to5.com/wp-content/uploads/2020/08/photography-playing-cards.jpg" alt="The Photography Deck by Eric Bohring">
+    </li>
+    <li><a href="https://deadonpaper.com/collections/playing-cards/products/arcana-full-tarot-deck">Arcana</a>
+        <p><span class="card-price">With $190,592 fundraised. Price $34.99.</span> The Arcana deck is a deck of cards inspired by Tarot (not 78 cards), utilizing its symbols and imagery. Made by Chris Ovdiyenko, it incorporates regular pips alongside Tarot elements like wands, swords, cups, and pentacles, and features four Major Arcana cards (Fool, Lovers, Death, Tower) instead of Jokers and ad cards.</p>
+        <img src="https://cdn.shopify.com/s/files/1/0249/7506/products/PC110019_1024x1024.jpg" alt="Arcana tarot playing card deck by Chris Ovdiyenko">
+    </li>
+    <li>
+        <a href="https://kingswildproject.com/products/pvc-federal-52-2nd-edition">Federal 52</a>
+        <p><span class="card-price">With $188,005 fundraised. Price $45.00.</span> The Federal 52 deck is a deck of cards inspired by currency and bank notes. Made by Jackson Robinson, it used traditional engraving designs from bank notes for the deck's style.</p>
+        <img src="https://cf.geekdo-images.com/camo/ceba41915f5d0ac4ce85a862fc167aff545e18c8/68747470733a2f2f692e696d6775722e636f6d2f664b4a55684a412e6a7067" alt="Federal 52 playing card deck by Jackson Robinson">
+    </li>
+    <li>
+        <a href="https://steveminty.com/collections/frontpage/products/muertosnightdeck">Muertos Day of the Dead</a>
+        <p><span class="card-price">With $159,706 fundraised. Price $22.00.</span> Muertos is a luxury set of American playing cards inspired by the Dia De Los Muertos holiday. Made by Steve Minty, the deck incorporates traditional aesthetics and the designer's personal experiences, portraying social classes and history of the culture while exuding contemporary elegance.</p>
+        <img src="https://cdn.shopify.com/s/files/1/1144/4154/products/nightdeckproductimage1_1024x1024.jpg" alt="Muertos playing card deck by Steve Minty">
+    </li>
+</ol>
+</body>
+</html>
