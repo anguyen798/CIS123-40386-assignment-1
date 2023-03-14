@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Web Page</title>
+  <style>
+    h1 {
+      text-shadow: 2px 2px 4px #333;
+    }
+    h2 {
+      transform: rotate(90deg);
+    }
+    img {
+      box-shadow: 2px 2px 4px #333;
+    }
+    .horizontal-resize {
+      transform: scaleX(2);
+    }
+    .gradient {
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      padding: 20px;
+    }
+    .move-up {
+      animation: move-up 2s infinite;
+    }
+    @keyframes move-up {
+      0% {transform: translateY(0px);}
+      50% {transform: translateY(-100px);}
+      100% {transform: translateY(0px);}
+    }
+    .move-right {
+      animation: move-right 2s infinite;
+    }
+    @keyframes move-right {
+      0% {transform: translateX(0px);}
+      50% {transform: translateX(300px);}
+      100% {transform: translateX(0px);}
+    }
+    .skew-right {
+      transform: skewX(-75deg);
+    }
+    .blur {
+      filter: blur(5px);
+    }
+    .image-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+    .image-container img {
+      margin-right: 20px;
+    }
+    .opacity {
+      filter: opacity(50%);
+    }
+    .saturate {
+      filter: saturate(200%);
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Welcome to my Web Page</h1>
+  <h2>Explore</h2>
+</header>
+<main>
+  <div class="image-container">
+    <img src="https://via.placeholder.com/400x400" alt="Image with box-shadow" />
+    <img class="horizontal-resize" src="https://via.placeholder.com/400x400" alt="Horizontally resized image" />
+    <img class="move-up" src="https://via.placeholder.com/400x400" alt="Vertically moving image" />
+  </div>
+  <div class="image-container">
+    <img class="move-right" src="https://via.placeholder.com/400x400" alt="Horizontally moving image" />
+    <img class="skew-right" src="https://via.placeholder.com/400x400" alt="Skewed image" />
+    <img class="blur" src="https://via.placeholder.com/400x400" alt="Blurred image" />
+  </div>
+  <div class="image-container">
+    <img class="opacity" src="https://via.placeholder.com/400x400" alt="50% opacity image" />
+    <img class="saturate" src="https://via.placeholder.com/400x400" alt="200% saturated image" />
+    <img src="https://via.placeholder.com/400x400" alt="Regular image" />
+  </div>
+  <div class="gradient">
+    <h3>This is a gradient background</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae ultrices enim. Nulla facilisi. Vivamus hendrerit odio enim, non venenatis quam elementum ac. In hac habitasse platea dictumst. Sed eget eratfermentum, lacinia ipsum vel, feugiat ex. Nam accumsan elit vel elit euismod pharetra.</p>
+  </div>
+</main>
+
+</body>
+</html>
