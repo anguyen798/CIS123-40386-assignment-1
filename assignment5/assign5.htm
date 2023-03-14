@@ -1,34 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>My Web Page</title>
   <style>
     h1 {
-      text-shadow: 2px 2px 4px #333;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      margin: auto;
+      width: 50%;
+      white-space: pre-line;
+      line-height: 1.2em;
+      max-height: 2.4em;
     }
     h2 {
       transform: rotate(90deg);
+      transform-origin: left;
+      position: absolute;
+      padding-block-end: 100px;
+      top: -80px;
+      text-align: center;
+      white-space: pre-line;
+      color: hotpink;
+    }
+    h3{
+      text-align: center;
+      font-size: 36px;
+      font-weight: bold;
     }
     img {
-      box-shadow: 2px 2px 4px #333;
+      box-shadow: 2px 2px 4px hotpink;
     }
     .horizontal-resize {
       transform: scaleX(2);
     }
-    .gradient {
-      background: linear-gradient(to right, #00c6ff, #0072ff);
+    .rainbow-gradient {
+      background: linear-gradient(
+              90deg,
+              rgba(255, 0, 0, 1) 0%,
+              rgba(255, 154, 0, 1) 10%,
+              rgba(208, 222, 33, 1) 20%,
+              rgba(79, 220, 74, 1) 30%,
+              rgba(63, 218, 216, 1) 40%,
+              rgba(47, 201, 226, 1) 50%,
+              rgba(28, 127, 238, 1) 60%,
+              rgba(95, 21, 242, 1) 70%,
+              rgba(186, 12, 248, 1) 80%,
+              rgba(251, 7, 217, 1) 90%,
+              rgba(255, 0, 0, 1) 100%
+      );
       padding: 20px;
     }
-    .move-up {
-      animation: move-up 2s infinite;
+    .rainbow-text {
+      background: linear-gradient(
+              to right,
+              rgba(255, 0, 0, 1) 0%,
+              rgba(255, 154, 0, 1) 10%,
+              rgba(208, 222, 33, 1) 20%,
+              rgba(79, 220, 74, 1) 30%,
+              rgba(63, 218, 216, 1) 40%,
+              rgba(47, 201, 226, 1) 50%,
+              rgba(28, 127, 238, 1) 60%,
+              rgba(95, 21, 242, 1) 70%,
+              rgba(186, 12, 248, 1) 80%,
+              rgba(251, 7, 217, 1) 90%,
+              rgba(255, 0, 0, 1) 100%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
+    .move-up {
+      animation: move-up 5s infinite;
+    }
+    /*Using @keyframes to create animation*/
     @keyframes move-up {
       0% {transform: translateY(0px);}
       50% {transform: translateY(-100px);}
       100% {transform: translateY(0px);}
     }
     .move-right {
-      animation: move-right 2s infinite;
+      animation: move-right 1s infinite;
     }
     @keyframes move-right {
       0% {transform: translateX(0px);}
@@ -41,46 +92,86 @@
     .blur {
       filter: blur(5px);
     }
-    .image-container {
+    .images {
       display: flex;
       justify-content: space-between;
       margin-top: 20px;
     }
-    .image-container img {
+    .images img {
       margin-right: 20px;
+    }
+    .invisible {
+      filter: opacity(5%);
     }
     .opacity {
       filter: opacity(50%);
     }
+    .desaturate {
+      filter: saturate(10%);
+    }
     .saturate {
-      filter: saturate(200%);
+      filter: saturate(250%);
+    }
+    p{
+      text-indent: 5px;
+      white-space: pre-line;
+    }
+    p:first-letter {
+      font-size: 24pt;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
 <header>
-  <h1>Welcome to my Web Page</h1>
-  <h2>Explore</h2>
+  <h1 class="rainbow-text">Wacky Wacky Webpages</h1>
+  <h2>This is a simulation of drinking too much caffeine
+    and listening to disco music</h2>
 </header>
 <main>
-  <div class="image-container">
-    <img src="https://via.placeholder.com/400x400" alt="Image with box-shadow" />
-    <img class="horizontal-resize" src="https://via.placeholder.com/400x400" alt="Horizontally resized image" />
-    <img class="move-up" src="https://via.placeholder.com/400x400" alt="Vertically moving image" />
+  <div class="images">
+    <img class="invisible" src=ninja.png alt="Invisible image of ninja">
+    <img class="horizontal-resize" src=hamburger.png alt="Horizontally resized image of a hamburger">
+    <img class="move-up" src=rocket.png alt="Vertically moving transformed image of rocket moving up">
   </div>
-  <div class="image-container">
-    <img class="move-right" src="https://via.placeholder.com/400x400" alt="Horizontally moving image" />
-    <img class="skew-right" src="https://via.placeholder.com/400x400" alt="Skewed image" />
-    <img class="blur" src="https://via.placeholder.com/400x400" alt="Blurred image" />
+  <div class="images">
+    <img class="move-right" src=car.png alt="Horizontally moving transformed image of car moving right">
+    <img class="skew-right" src=track.png alt="Skewed transformed image of track">
+    <img class="blur" src=eyeglasses.png alt="Blurred factor of 5px image of glasses">
   </div>
-  <div class="image-container">
-    <img class="opacity" src="https://via.placeholder.com/400x400" alt="50% opacity image" />
-    <img class="saturate" src="https://via.placeholder.com/400x400" alt="200% saturated image" />
-    <img src="https://via.placeholder.com/400x400" alt="Regular image" />
+  <div class="images">
+    <img class="opacity" src=ninja.png alt="Image of ninja at 50% opacity">
+    <img class="desaturate" src=sadface.png alt="Image of sad face at 10% saturation">
+    <img class="saturate" src=rainbow.png alt="Image of rainbow at 250% saturation">
   </div>
-  <div class="gradient">
-    <h3>This is a gradient background</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae ultrices enim. Nulla facilisi. Vivamus hendrerit odio enim, non venenatis quam elementum ac. In hac habitasse platea dictumst. Sed eget eratfermentum, lacinia ipsum vel, feugiat ex. Nam accumsan elit vel elit euismod pharetra.</p>
+  <h3 class="rainbow-text">This is a colorful rainbow title that changes color by scrolling inwards and outwards</h3>
+  <div class="rainbow-gradient">
+    <p>Somewhere over the rainbow
+      Way up high
+      There's a land that I heard of
+      Once in a lullaby
+    </p>
+    <p>Somewhere over the rainbow
+      Skies are blue
+      And the dreams that you dare to dream
+      Really do come true
+    </p>
+    <p>Someday I'll wish upon a star
+      And wake up where the clouds are far behind me
+      Where troubles melt like lemon drops
+      Away above the chimney tops
+      That's where you'll find me
+    </p>
+    <p>Somewhere over the rainbow
+      Bluebirds fly
+      Birds fly over the rainbow
+      Why then, oh, why can't I? (x2)
+    </p>
+    <p>If happy little bluebirds fly
+      Beyond the rainbow
+      Why, oh why can't I?
+    </p>
+
   </div>
 </main>
 
